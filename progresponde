@@ -1,0 +1,33 @@
+name = "Harry"
+question = "Chove amanhã no Rio de Janeiro?"
+answer = ""
+
+import random
+
+random_number = random.randint(1, 9)
+
+#print(random_number)
+
+if random_number == 1:
+  answer = "Sim, mas é claro!"
+elif random_number == 2:
+  answer = "Vai cair um pé d'água, " + name
+elif random_number == 3:
+  answer = "Acho que não..."
+elif random_number == 4:
+  answer = "Pergunta pra Maju Coutinho..."
+elif random_number == 5:
+  answer = "Eu tô com cara de Maju Coutinho?"
+elif random_number == 6:
+  answer = "Com certeza, irmão."
+elif random_number == 7:
+  answer = "Não sei..."
+elif random_number == 8:
+  answer = "Pergunta pra Alexa."
+elif random_number == 9:
+  answer = "Sim, vai chover bastante."
+else:
+  print("Error")
+
+print(name + " pergunta: " + question)
+print("O programador aqui responde: " + answer)
