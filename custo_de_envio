@@ -1,0 +1,35 @@
+weight = 1.5
+# PAC
+if weight <= 2:
+  cost_pac = 1.5 * weight + 20
+elif weight <= 6 and weight > 2:
+  cost_pac = 3 * weight + 20
+elif weight <= 10 and weight > 6:
+  cost_pac = 4 * weight + 20
+elif weight > 10:
+  cost_pac = 4.75 * weight + 20
+else:
+  print("Deu ruim, programador.")
+
+print("O custo da sua encomenda com PAC é: ")
+print(cost_pac)
+
+# Sedex
+cost_sedex = 125
+print("O custo da sua encomenda com Sedex é: ")
+print(cost_sedex)
+
+# Sedex 10
+if weight <= 2:
+  cost_sedex10 = 4.5 * weight
+elif weight <= 6 and weight > 2:
+  cost_sedex10 = 3 * weight
+elif weight <= 10 and weight > 6:
+  cost_sedex10 = 4 * weight
+elif weight > 10:
+  cost_sedex10 = 4.75 * weight
+else:
+  print("Deu ruim, programador.")
+
+print("O custo da sua encomenda com Sedex 10 é:")
+print(cost_sedex10)
