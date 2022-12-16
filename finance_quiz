@@ -1,0 +1,41 @@
+print("Welcome to my finance quizz!")
+
+playing = input("Would you like to start playing?(yes/no) ")
+
+if playing.lower() != "yes":
+    quit()
+
+print("Okay, Let´s play: ")
+score = 0
+
+answer = input("____ is a measure of a stock's volatility in relation to the overall market. Fill in the blank with the correct answer: ")
+if answer.lower() == "beta":
+    print('Correct!')
+    score += 1
+else: 
+    print("Incorrect!")
+
+answer = input("The ___ ratio compares the return of an investment with its risk.(Return/Std.Dev.) ")
+if answer.lower() == "sharpe":
+    print('Correct!')
+    score += 1
+else: 
+    print("Incorrect!")
+
+answer = input("____ is a measure of financial performance calculated by dividing net income by shareholders' equity. ")
+if answer.lower() == "roe":
+    print('Correct!')
+    score += 1
+else: 
+    print("Incorrect!")
+
+answer = input("____ is a measurement that tells us how much a bond's price might change if interest rates fluctuate. ")
+if answer.lower() == "duration":
+    print('Correct!')
+    score += 1
+else: 
+    print("Incorrect!")
+
+print("You got " + str(score) + " questions correct! " + "Congrats! You are almost ready to open your own hedge fund! ")
+
+
